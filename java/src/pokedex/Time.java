@@ -4,12 +4,12 @@ import java.util.List;
 
 import pokemon.Pokemon;
 
-public class Pokedex {
+public class Time {
 	private List<Pokemon> pokemons;
-
-	public Pokedex() {}
 	
-	public Pokedex(List<Pokemon> pokemons) {
+	public Time() {}
+	
+	public Time(List<Pokemon> pokemons) {
 		super();
 		this.pokemons = pokemons;
 	}

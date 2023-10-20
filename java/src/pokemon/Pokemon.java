@@ -61,5 +61,11 @@ public class Pokemon {
 	public void setTipos(List<Tipo> tipos) {
 		this.tipos = tipos;
 	}
+
+	@Override
+	public String toString() {
+		return "Pokemon [nome=" + nome + ", baseEvolucao=" + baseEvolucao + ", evolucao=" + evolucao;
+	}
+	
 	
 }
