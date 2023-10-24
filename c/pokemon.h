@@ -1,7 +1,7 @@
 #ifndef POKEMON_H
 #define POKEMON_H
 
-// Definindo as enumerações em C
+
 enum Tipo {
     VENENO, GRAMA, INSETO, FOGO, AGUA, TERRA, AR
 };
@@ -10,7 +10,7 @@ enum Insignias {
     ROCHA, CASCATA, TROVAO, ALMA
 };
 
-// Definindo a estrutura do Pokemon em C
+
 struct Pokemon {
     char nome[50];
     struct Pokemon* baseEvolucao;
@@ -18,20 +18,20 @@ struct Pokemon {
     enum Tipo tipos[3];
 };
 
-// Definindo a estrutura do Time em C
+
 struct Time {
     struct Pokemon* pokemons[6];
     int quantidade;
 };
 
-// Definindo a estrutura de Pessoa em C
+
 struct Pessoa {
     char nome[50];
     int idade;
     struct Time* time;
 };
 
-// Definindo a estrutura de Treinador em C
+
 struct Treinador {
     struct Pessoa pessoa;
     enum Insignias insigniasVencidas[8];

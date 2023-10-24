@@ -25,7 +25,6 @@ void removerPokemon(struct Time* time, struct Pokemon* pokemon) {
     for (int i = 0; i < time->quantidade; i++) {
         if (time->pokemons[i] == pokemon) {
             time->pokemons[i] = NULL;
-            // Reorganize o array, se necessário
             for (int j = i; j < time->quantidade - 1; j++) {
                 time->pokemons[j] = time->pokemons[j + 1];
             }
